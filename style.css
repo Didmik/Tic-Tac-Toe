@@ -9,16 +9,60 @@
 .gameContainer {
     width: 500px;
     height: 500px;
-    border: solid 2px black;
+    /*border: solid 2px black; */
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    gap: 5px;
+    /*gap: 5px; */
 }
 
 
 .box {
-    border: 1px solid black;
+    border: 1px solid black; 
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+#nil, #one, #two {
+    border-top: none;
+    border-right: none;
+}
+
+
+#three, #four, #five {
+    border-top: none;
+    border-right: none;
+}
+
+
+#six, #seven, #eight {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+#nil, #three, #six {
+    border-left: none;
+}
+
+
+
+
+
+.restart {
+    margin-top: 20px;
+    width: 100px;
+}
+
+
+.endgameMessage {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    
 }
