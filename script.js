@@ -1,17 +1,4 @@
 
-
-const Player = (name, marker) => {
-    return { name, marker }
-    };
-
-
-const Player1 = Player("Tom", "X");
-const Player2 = Player("Tim", "O");
-
-//console.log(Tom);
-
-
-
 const Gameboard = (() => {
     let gameboard = ["X","O","X","O","X","O","X","O","X"];
 
@@ -23,7 +10,7 @@ const Gameboard = (() => {
 
         let playerStartButton = document.querySelector(".playerStart");
 
-        let playerX = document.querySelector("#player1");
+        let playerX = document.querySelector("#player1")
         let playerO = document.querySelector("#player2");
 
         let gameCont = document.querySelector(".gameContainer");
@@ -46,10 +33,12 @@ const Gameboard = (() => {
 
 
          submitButton.addEventListener("click", () => {
-            playerStartButton.innerHTML = playerX.value.bold() + " starts with X. " 
-            + playerO.value.bold() + " follows with O"; 
+            if (playerX.value != 0 && playerO.value != 0) { 
+                playerStartButton.innerHTML = playerX.value.bold() + " starts with X. " 
+                + playerO.value.bold() + " follows with O"; 
 
-            gameCont.style.visibility = "visible";  
+                gameCont.style.visibility = "visible";  
+            }
          })
 
          
@@ -102,7 +91,9 @@ const Gameboard = (() => {
                     gameboard = [];
                 }
 
-           
+       else if (gameboard.length === 0) {
+                endMessage.textContent = "Tie. Press restart game for rematch!";
+           }
              
              })
         });

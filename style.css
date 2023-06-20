@@ -9,7 +9,8 @@
     margin: 20px 0 0 50px;
     width: 500px;
     height: 20px;
-    
+    font-size: 17px;
+    font-weight: 500;
 }
 
 
@@ -28,8 +29,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.box:hover {
+    color: black;
+    background: lightblue;
 }
 
 
@@ -58,15 +65,15 @@
 
 
 
-.restart {
-    margin: 20px 0 0 50px;
-    width: 100px;
-}
-
-
 .endgameMessage {
     margin: 20px 0 0 50px;
     width: 500px;
-    height: 40px;
-    
+    height: 20px;
+    font-size: 20px;
+    font-weight: 700;
 }
+
+.restart {
+    margin: 20px 0 0 250px;
+    width: 100px;
+    }
