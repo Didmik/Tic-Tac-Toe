@@ -5,14 +5,21 @@
     text-align: center;
 }
 
+.playerStart {
+    margin: 20px 0 0 50px;
+    width: 500px;
+    height: 20px;
+    
+}
+
 
 .gameContainer {
     width: 500px;
     height: 500px;
-    /*border: solid 2px black; */
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    /*gap: 5px; */
+    margin: 20px 0 0 50px;
+    visibility: hidden;
 }
 
 
@@ -51,18 +58,15 @@
 
 
 
-
-
 .restart {
-    margin-top: 20px;
+    margin: 20px 0 0 50px;
     width: 100px;
 }
 
 
 .endgameMessage {
-    margin-top: 10px;
-    border: 1px solid black;
-    width: 300px;
-    height: 100px;
+    margin: 20px 0 0 50px;
+    width: 500px;
+    height: 40px;
     
 }

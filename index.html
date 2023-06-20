@@ -13,6 +13,21 @@
   <div class="container">
     <h1 class="header">Tic Tac Toe</h1>
 
+        <fieldset class="players">
+          <legend>Players</legend>
+    
+          <label for="player1">*Player X:</label>
+          <input type="text" id="player1" name="player1" placeholder="Player X name" required> 
+        
+          <label for="player2">*Player O:</label>
+          <input type="text" id="player2" name="player2" placeholder="Player O name" required> 
+    
+          <button id="submit" type="submit">Submit</button>
+        </fieldset>
+      
+
+    <div class="playerStart"></div>
+
     <div class="gameContainer">
         <button class="box" id="nil"></button>
         <button class="box" id="one"></button>
@@ -25,9 +40,9 @@
         <button class="box" id="eight"></button>
     </div>
 
-    <button class="restart">Restart Game</button>
-    
     <div class="endgameMessage"></div>
+
+    <button class="restart">Restart Game</button>
 
   </div>
     
